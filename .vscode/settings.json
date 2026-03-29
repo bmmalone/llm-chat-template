@@ -1,0 +1,71 @@
+{
+    // General Settings
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "editor.wordWrap": "on",
+    "makefile.configureOnOpen": false,
+    "editor.detectIndentation": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.trimAutoWhitespace": true,
+    // UI Clean-up
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "off",
+    "editor.glyphMargin": false,
+    "editor.folding": false,
+    "editor.occurrencesHighlight": "off",
+    "editor.selectionHighlight": false,
+    "editor.renderLineHighlight": "none",
+    "editor.stickyScroll.enabled": true,
+    // Typography for Writing
+    "editor.fontSize": 14,
+    "editor.lineHeight": 24,
+    "editor.letterSpacing": 0.25,
+    "editor.cursorStyle": "line",
+    "editor.cursorBlinking": "smooth",
+    "editor.rulers": [
+        88,
+        120
+    ],
+    // Disable opening in preview mode
+    "files.trimTrailingWhitespace": true,
+    "workbench.list.openMode": "singleClick",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.revealIfOpen": true,
+    // Language Specific: Markdown
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
+        "editor.snippetSuggestions": "top",
+        "editor.tabCompletion": "on",
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 120,
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false
+    },
+    // copy/pasting for typical LLM interactions
+    "editor.formatOnPaste": false,
+    "markdown.preview.breaks": true,
+    "editor.pasteAs.enabled": false,
+    "editor.links": true,
+    // highlighting
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "markup.bold.markdown",
+                    "entity.name.section.markdown.heading.setext", // H1/H2 underlines
+                    "punctuation.definition.heading.markdown", // The actual # characters
+                    "entity.name.section.markdown" // The header text itself
+                ],
+                "settings": {
+                    "foreground": "#2D88A8" // Makes your **Prompt** headers a distinct blue-ish
+                }
+            }
+        ]
+    }
+}

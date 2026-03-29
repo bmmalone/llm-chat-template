@@ -1,0 +1,25 @@
+{
+    "LLM Chat Template": {
+        "scope": "markdown",
+        "prefix": "llmchat",
+        "body": [
+            "---",
+            "title: ${1:Title}",
+            "author:",
+            "    - \"**Author:** ${2:Brandon}\"",
+            "    - \"**Model:** ${3|Claude,Gemini,ChatGPT|}\"",
+            "    - \"**Chat Name:** ${4:My Chat}\"",
+            "date: \"${CURRENT_MONTH_NAME} ${CURRENT_DATE}, ${CURRENT_YEAR}\"",
+            "---",
+            "",
+            "## Prompt",
+            "$0",
+            "",
+            "---",
+            "",
+            "## Response",
+            ""
+        ],
+        "description": "Boilerplate for LLM interactions"
+    }
+}
