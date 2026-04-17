@@ -12,7 +12,7 @@
     "editor.minimap.enabled": false,
     "editor.lineNumbers": "off",
     "editor.glyphMargin": false,
-    "editor.folding": false,
+    "editor.folding": true,
     "editor.occurrencesHighlight": "off",
     "editor.selectionHighlight": false,
     "editor.renderLineHighlight": "none",
@@ -24,8 +24,7 @@
     "editor.cursorStyle": "line",
     "editor.cursorBlinking": "smooth",
     "editor.rulers": [
-        88,
-        120
+        88
     ],
     // Disable opening in preview mode
     "files.trimTrailingWhitespace": true,
@@ -43,9 +42,12 @@
         "editor.snippetSuggestions": "top",
         "editor.tabCompletion": "on",
         "editor.wordWrap": "wordWrapColumn",
-        "editor.wordWrapColumn": 120,
+        "editor.wordWrapColumn": 88,
         "editor.unicodeHighlight.ambiguousCharacters": false,
-        "editor.unicodeHighlight.invisibleCharacters": false
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "editor.foldingStrategy": "auto",
+        "editor.showFoldingControls": "always",
+        "editor.folding": true,
     },
     // copy/pasting for typical LLM interactions
     "editor.formatOnPaste": false,

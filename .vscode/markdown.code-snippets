@@ -1,7 +1,29 @@
 {
+    "Next Round Template": {
+        "scope": "markdown",
+        "prefix": "nextround",
+        "body": [
+            "=== Prompt #${1:1}",
+            "===",
+            "",
+            "## Prompt #${1:1}",
+            "",
+            "$0",
+            "",
+            "=== Response #${1:1}",
+            "===",
+            "",
+            "## Response #${1:1}",
+            "",
+            "",
+            "",
+            "===",
+        ],
+        "description": "Boilerplate for LLM interactions"
+    },
     "LLM Chat Template": {
         "scope": "markdown",
-        "prefix": "llmchat",
+        "prefix": "start-llmchat",
         "body": [
             "---",
             "title: ${1:Title}",
@@ -12,14 +34,24 @@
             "date: \"${CURRENT_MONTH_NAME} ${CURRENT_DATE}, ${CURRENT_YEAR}\"",
             "---",
             "",
-            "## Prompt",
+            "=== Prompt #1",
+            "===",
+            "",
+            "## Prompt #1",
+            "",
             "$0",
             "",
             "---",
             "",
-            "## Response",
-            ""
+            "=== Response #1",
+            "===",
+            "",
+            "## Response #1",
+            "",
+            "",
+            "",
+            "===",
         ],
         "description": "Boilerplate for LLM interactions"
-    }
+    },
 }
